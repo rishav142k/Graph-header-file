@@ -93,29 +93,5 @@ vector<int> Graph :: DFS(int source) {
 	return nodesDiscovered;
 }
 
-int main() {
-	
-    int n, m;
-    cin >> n >> m;
-    Graph G(n);
-	int a,b;
-	while(m--) {
-		cin >> a >> b;
-		G.addEdge(a, b, 0);
-	}
-
-    vector<int> res = G.DFS(3);
-    
-    
-    cout << res.size() << "\n";
-    for(unsigned int i = 0; i < res.size(); i++) {
-    	cout << res[i] << " ";
-    }
-
-return 0;
-}
-
-
-
 
 #endif
